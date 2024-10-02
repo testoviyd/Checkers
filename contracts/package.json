@@ -1,0 +1,14 @@
+{
+  "name": "basecheckers-contracts",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "hardhat test",
+    "deploy": "node scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "hardhat": "^2.6.0"
+  }
+}
