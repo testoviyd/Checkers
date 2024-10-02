@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BaseCheckers - Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Game in Progress</h1>
+    <p>Transaction Hash: {{ tx_hash }}</p>
+    <!-- Add game board visualization here -->
+    <form action="/move" method="post">
+        <input type="hidden" name="account" value="{{ account }}">
+        <input type="hidden" name="private_key" value="{{ private_key }}">
+        <label for="from_x">From X:</label>
+        <input type="number" id="from_x" name="from_x" required>
+        <label for="from_y">From Y:</label>
+        <input type="number" id="from_y" name="from_y" required><br><br>
+        <label for="to_x">To X:</label>
+        <input type="number" id="to_x" name="to_x" required>
+        <label for="to_y">To Y:</label>
+        <input type="number" id="to_y" name="to_y" required><br><br>
+        <button type="submit">Make Move</button>
+    </form>
+</body>
+</html>
