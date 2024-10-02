@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BaseCheckers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to BaseCheckers</h1>
+    <form action="/join" method="post">
+        <label for="account">Ethereum Account:</label>
+        <input type="text" id="account" name="account" required><br><br>
+        <label for="private_key">Private Key:</label>
+        <input type="password" id="private_key" name="private_key" required><br><br>
+        <button type="submit">Join Game</button>
+    </form>
+</body>
+</html>
